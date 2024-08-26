@@ -1,0 +1,23 @@
+$header-height: 5vh;
+.HeaderAppBar {
+  width: 100%;
+  height: $header-height;
+
+  display: flex;
+  justify-content: center;
+
+  .headerAppBar-position {
+    width: 935px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .HeaderAppBar-SearchBar {
+    position: relative;
+    .searchBar-holder {
+      position: absolute;
+      display: flex;
+      transform: translate(50%, -100%);
+      opacity: 0.6;
+    }
+  }
+}
