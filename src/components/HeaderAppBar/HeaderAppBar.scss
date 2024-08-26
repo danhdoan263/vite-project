@@ -14,10 +14,15 @@ $header-height: 5vh;
   .HeaderAppBar-SearchBar {
     position: relative;
     .searchBar-holder {
-      position: absolute;
       display: flex;
+      position: absolute;
+
       transform: translate(50%, -100%);
       opacity: 0.6;
+      align-items: center;
+      .HeaderAppBar-SearchBar-label {
+        transform: translateY(-8%);
+      }
     }
   }
 }
