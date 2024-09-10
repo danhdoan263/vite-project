@@ -1,7 +1,8 @@
 import React from "react";
+import { HomeBoardContent } from "../HomeBoardContent/HomeBoardContent";
 
 const BoardContent = () => {
-  return <div>BoardContent</div>;
+  return <HomeBoardContent />;
 };
 
 export default BoardContent;

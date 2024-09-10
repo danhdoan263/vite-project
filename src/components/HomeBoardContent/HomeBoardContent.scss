@@ -1,0 +1,15 @@
+.HomeBoardContent {
+  margin-top: 27.5px;
+
+  .storySection {
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        list-style-type: circle;
+        font-size: 66px;
+      }
+    }
+  }
+}

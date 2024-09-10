@@ -1,4 +1,5 @@
 $header-height: 5vh;
+$gap-icon: 22px;
 .HeaderAppBar {
   width: 100%;
   height: $header-height;
@@ -10,19 +11,24 @@ $header-height: 5vh;
     width: 935px;
     display: flex;
     justify-content: space-around;
-  }
-  .HeaderAppBar-SearchBar {
-    position: relative;
-    .searchBar-holder {
-      display: flex;
-      position: absolute;
 
-      transform: translate(50%, -100%);
-      opacity: 0.6;
-      align-items: center;
-      .HeaderAppBar-SearchBar-label {
-        transform: translateY(-8%);
+    .HeaderAppBar-SearchBar {
+      .searchBar {
+        min-width: 215px;
+        max-width: 230px;
+        min-height: 28px;
+        font-size: 16px;
       }
+      .searchBar::placeholder {
+        text-align: center;
+      }
+      .searchBar:focus::placeholder {
+        color: transparent;
+      }
+    }
+    .HeaderAppBar-Menu {
+      display: flex;
+      gap: $gap-icon;
     }
   }
 }

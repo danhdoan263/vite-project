@@ -1,5 +1,3 @@
-import React from "react";
-import { IoIosSearch } from "react-icons/io";
 //logo
 import logo from "../../assets/ins-logo.svg";
 import activityFeed from "../../assets/menu-icon/activityFeed.svg";
@@ -8,6 +6,7 @@ import homeFill from "../../assets/menu-icon/homeFill.svg";
 import messenger from "../../assets/menu-icon/messenger.svg";
 import newPost from "../../assets/menu-icon/newPost.svg";
 //scss
+import "../../icomoon.css";
 import "./HeaderAppBar.scss";
 const HeaderAppBar = () => {
   return (
@@ -17,15 +16,13 @@ const HeaderAppBar = () => {
         <div className="HeaderAppBar-logo">
           <img src={logo} alt="" />
         </div>
-        {/* Saerching Bar */}
+        {/* Searching Bar */}
         <div className="HeaderAppBar-SearchBar">
-          <input type="text" />
-          <div className="searchBar-holder">
-            <div className="HeaderAppBar-SearchBar-icon">
-              <IoIosSearch />
-            </div>
-            <div className="HeaderAppBar-SearchBar-label">Search</div>
-          </div>
+          <input
+            className="searchBar"
+            placeholder=" &#xe901; Search "
+            type="text"
+          />
         </div>
         {/* Menu item */}
         <div className="HeaderAppBar-Menu">
